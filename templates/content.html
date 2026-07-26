@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simple Page</title>
+  </head>
+  <body>
+    <h1>Welcome to content Page</h1>
+    <h2>Tutorial for Jinja2 Template</h2>
+    {%if value%}
+    <h1>value is {{value}}</h1>
+    {%endif%}
+    <h3>Looping</h3>
+    <ul>
+      {%for val in arr%}
+      <li>{{val}}</li>
+      {%endfor%}
+    </ul>
+  </body>
+</html>

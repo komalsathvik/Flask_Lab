@@ -17,4 +17,9 @@ def handle_login():
         return "<h1>entered into GET METHOD"
     else:
         return f"<h1> Welcome {request.form["username"]} </h1>"
+@app.route("/content")
+def content():
+    value=123
+    arr=[1,2,3,4,5]
+    return render_template("content.html",arr=arr,value=value)
 app.run(debug=True)
